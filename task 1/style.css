@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 900px;
+    max-width: 95%;
+}
+
+.card {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+.left-side {
+    flex: 1;
+    background: url('https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&q=80&w=1000') no-repeat center center/cover;
+    position: relative;
+    padding: 60px 40px;
+    color: white;
+}
+
+.overlay-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.overlay-text p {
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+.right-side {
+    flex: 1.2;
+    padding: 50px 60px;
+    background-color: white;
+}
+
+.right-side h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.subtitle a {
+    color: #4facfe;
+    text-decoration: none;
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.input-group label {
+    display: block;
+    font-size: 11px;
+    color: #aaa;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+}
+
+.phone-input span {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.checkbox-group label {
+    font-size: 12px;
+    color: #888;
+    margin-left: 10px;
+}
+
+
+.login-btn {
+    background: #ff1f5a;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    box-shadow: 0 4px 15px rgba(255, 31, 90, 0.3);
+}
+
+
+.social-login {
+    clear: both;
+    margin-top: 50px;
+}
+
+.social-login p {
+    font-size: 11px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.social-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.social-btns a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.fb { background-color: #3b5998; }
+.tw { background-color: #55acee; }
+.gp { background-color: #dd4b39; }
+
+@media (max-width: 768px) {
+    .card { flex-direction: column; }
+    .left-side { display: none; } 
+}
